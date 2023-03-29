@@ -1,0 +1,87 @@
+Exception in thread Thread-1 (main):
+Traceback (most recent call last):
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Ganjubaz\Desktop\SimpleBTCtgBOT\script.py", line 88, in main
+    account_id = client.get_primary_account()["id"]
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 247, in get_primary_account
+    return self.get_account('primary', **params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 242, in get_account
+    response = self._get('v2', 'accounts', account_id, params=params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 129, in _get
+    return self._request('get', *args, **kwargs)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 116, in _request
+    return self._handle_response(response)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 125, in _handle_response
+    raise build_api_error(response)
+coinbase.wallet.error.AuthenticationError: APIError(id=authentication_error): request timestamp expired
+Exception in thread Thread-2 (main):
+Traceback (most recent call last):
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Ganjubaz\Desktop\SimpleBTCtgBOT\script.py", line 88, in main
+    account_id = client.get_primary_account()["id"]
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 247, in get_primary_account
+    return self.get_account('primary', **params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 242, in get_account
+    response = self._get('v2', 'accounts', account_id, params=params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 129, in _get
+    return self._request('get', *args, **kwargs)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 116, in _request
+    return self._handle_response(response)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 125, in _handle_response
+    raise build_api_error(response)
+coinbase.wallet.error.AuthenticationError: APIError(id=authentication_error): request timestamp expired
+Exception in thread Thread-3 (main):
+Traceback (most recent call last):
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Ganjubaz\Desktop\SimpleBTCtgBOT\script.py", line 88, in main
+    account_id = client.get_primary_account()["id"]
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 247, in get_primary_account
+    return self.get_account('primary', **params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 242, in get_account
+    response = self._get('v2', 'accounts', account_id, params=params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 129, in _get
+    return self._request('get', *args, **kwargs)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 116, in _request
+    return self._handle_response(response)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 125, in _handle_response
+    raise build_api_error(response)
+coinbase.wallet.error.AuthenticationError: APIError(id=authentication_error): request timestamp expired
+Traceback (most recent call last):
+  File "C:\Users\Ganjubaz\Desktop\SimpleBTCtgBOT\main.py", line 753, in <module>
+    bot.polling(none_stop=True)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\util.py", line 91, in run
+    task(*args, **kwargs)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\Ganjubaz\Desktop\SimpleBTCtgBOT\main.py", line 115, in handle_message
+    in_rub = bitcoin.Btc().convert("btc", balance)
+  File "C:\Users\Ganjubaz\Desktop\SimpleBTCtgBOT\classes\pay\bitcoin.py", line 13, in __init__
+    self.account_id = self.client.get_primary_account()["id"]
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 247, in get_primary_account
+    return self.get_account('primary', **params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 242, in get_account
+    response = self._get('v2', 'accounts', account_id, params=params)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 129, in _get
+    return self._request('get', *args, **kwargs)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 116, in _request
+    return self._handle_response(response)
+  File "C:\Users\Ganjubaz\AppData\Local\Programs\Python\Python310\lib\site-packages\coinbase\wallet\client.py", line 125, in _handle_response
+    raise build_api_error(response)
+coinbase.wallet.error.AuthenticationError: APIError(id=authentication_error): request timestamp expired
